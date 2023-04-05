@@ -47,11 +47,11 @@
 //}
 
 //if (word1.Length > word2.Length)
-//    Console.WriteLine("La parola più lunga è: " + word1);
+//    Console.WriteLine($"Le parole sono: '{word1}' e '{word2}'");
 //else if (word1.Length < word2.Length)
-//    Console.WriteLine("La parola più lunga è: " + word2);
+//    Console.WriteLine($"Le parole sono: '{word2}' e '{word1}'");
 //else
-//    Console.WriteLine("Le parole sono uguali!");
+//    Console.WriteLine($"Le parole sono: '{word1}' e '{word2}'");
 
 // Snack 3 ----------
 
@@ -176,28 +176,44 @@
 
 // Snack 9 ----------
 
-int[] numbers = new int[0];
-int somma = 0;
-int num;
+//int[] numbers = new int[0];
+//int somma = 0;
+//int num;
 
-while (somma < 50)
+//while (somma < 50)
+//{
+//    Console.Write("Inserisci un numero: ");
+
+//    while (!int.TryParse(Console.ReadLine(), out num))
+//      {
+//       Console.WriteLine("Devi inserire un numero!");
+//      }
+
+//        Array.Resize(ref numbers, numbers.Length + 1);
+//    numbers[numbers.Length - 1] = num;
+
+//    somma += num;
+//}
+
+//Console.WriteLine("I numeri sono:");
+
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    Console.WriteLine(numbers[i]);
+//}
+
+
+// Snack 9 ----------
+Console.WriteLine("Inserisci il numero di array da generare:");
+int n = int.Parse(Console.ReadLine());
+
+Random random = new Random();
+for (int i = 0; i < n; i++)
 {
-    Console.Write("Inserisci un numero: ");
-
-    while (!int.TryParse(Console.ReadLine(), out num))
-      {
-       Console.WriteLine("Devi inserire un numero!");
-      }
-
-        Array.Resize(ref numbers, numbers.Length + 1);
-    numbers[numbers.Length - 1] = num;
-
-    somma += num;
-}
-
-Console.WriteLine("I numeri sono:");
-
-for (int i = 0; i < numbers.Length; i++)
-{
-    Console.WriteLine(numbers[i]);
+    int[] array = new int[10];
+    for (int x = 0; x < array.Length; x++)
+    {
+        array[x] = random.Next(1, 101);
+    }
+    Console.WriteLine("Array " + (i + 1) + ": " + string.Join(", ", array));
 }
