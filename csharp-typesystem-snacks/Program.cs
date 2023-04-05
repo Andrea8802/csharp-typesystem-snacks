@@ -175,3 +175,29 @@
 
 
 // Snack 9 ----------
+
+int[] numbers = new int[0];
+int somma = 0;
+int num = 0;
+
+while (somma < 50)
+{
+    Console.Write("Inserisci un numero: ");
+
+    while (!int.TryParse(Console.ReadLine(), out num))
+      {
+       Console.WriteLine("Devi inserire un numero!");
+      }
+
+        Array.Resize(ref numbers, numbers.Length + 1);
+    numbers[numbers.Length - 1] = num;
+
+    somma += num;
+}
+
+Console.WriteLine("I numeri sono:");
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    Console.WriteLine(numbers[i]);
+}
