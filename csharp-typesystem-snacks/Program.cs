@@ -25,31 +25,56 @@
 
 
 // Snack 2 ----------
-string word1;
-string word2;
+//string word1;
+//string word2;
 
-Console.WriteLine("Inserisci prima parola");
-word1 = Console.ReadLine();
+//Console.WriteLine("Inserisci prima parola");
+//word1 = Console.ReadLine();
 
-while (word1 == "")
+//while (word1 == "")
+//{
+//    Console.WriteLine("Devi inserire almeno un carattere!");
+//    word1 = Console.ReadLine();
+//}
+
+//Console.WriteLine("Inserisci seconda parola");
+//word2 = Console.ReadLine();
+
+//while (word2 == "")
+//{
+//    Console.WriteLine("Devi inserire almeno un carattere!");
+//    word2 = Console.ReadLine();
+//}
+
+//if (word1.Length > word2.Length)
+//    Console.WriteLine("La parola più lunga è: " + word1);
+//else if (word1.Length < word2.Length)
+//    Console.WriteLine("La parola più lunga è: " + word2);
+//else
+//    Console.WriteLine("Le parole sono uguali!");
+
+// Snack 3 ----------
+
+int numRimanenti = 10;
+int numUtente;
+int somma = 0;
+
+
+for (int i = 0; i < numRimanenti; i++)
 {
-    Console.WriteLine("Devi inserire almeno un carattere!");
-    word1 = Console.ReadLine();
+    Console.WriteLine("Rimanenti: " + (numRimanenti - i));
+    Console.WriteLine("Inserisci un numero: ");
+    while (!int.TryParse(Console.ReadLine(), out numUtente))
+    {
+        Console.WriteLine("Rimanenti: " + (numRimanenti - i));
+        Console.WriteLine("Devi inserire un numero!");
+    }
+    
+    somma += numUtente;
+
 }
 
-Console.WriteLine("Inserisci seconda parola");
-word2 = Console.ReadLine();
+Console.WriteLine("La somma è: " + somma);
 
-while (word2 == "")
-{
-    Console.WriteLine("Devi inserire almeno un carattere!");
-    word2 = Console.ReadLine();
-}
 
-if (word1.Length > word2.Length)
-    Console.WriteLine("La parola più lunga è: " + word1);
-else if (word1.Length < word2.Length)
-    Console.WriteLine("La parola più lunga è: " + word2);
-else
-    Console.WriteLine("Le parole sono uguali!");
 
