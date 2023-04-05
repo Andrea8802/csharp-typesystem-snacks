@@ -1,4 +1,4 @@
-﻿// Snack1 
+﻿// Snack1 ----------
 
 //int num1;
 //int num2;
@@ -24,14 +24,14 @@
 //    Console.WriteLine("I numeri sono uguali!");
 
 
-// Snack 2
+// Snack 2 ----------
 string word1;
 string word2;
 
 Console.WriteLine("Inserisci prima parola");
 word1 = Console.ReadLine();
 
-while(word1 == "")
+while (word1 == "")
 {
     Console.WriteLine("Devi inserire almeno un carattere!");
     word1 = Console.ReadLine();
@@ -46,13 +46,10 @@ while (word2 == "")
     word2 = Console.ReadLine();
 }
 
-
-int lunghezza1 = word1.Length;
-int lunghezza2 = word2.Length;
-
-if (lunghezza1 > lunghezza2)
+if (word1.Length > word2.Length)
     Console.WriteLine("La parola più lunga è: " + word1);
-else if (lunghezza1 < lunghezza2)
+else if (word1.Length < word2.Length)
     Console.WriteLine("La parola più lunga è: " + word2);
 else
     Console.WriteLine("Le parole sono uguali!");
+
