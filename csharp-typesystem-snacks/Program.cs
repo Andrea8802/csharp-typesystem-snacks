@@ -111,7 +111,7 @@
 //    Console.WriteLine("Il numero è: " + (numUtente + 1));
 
 
-// Snack 5 ----------
+// Snack 6 ----------
 
 //using System;
 
@@ -134,26 +134,44 @@
 //    Console.WriteLine("Non sei invitato!");
 
 
-// Snack 6 ----------
+// Snack 7 ----------
 
-int[] numeri = new int[6];
-int numero = 0;
-for (int i = 0; i <  numeri.Length; i++)
-{
-    Console.WriteLine("Inserisci un numero!");
-    while(!int.TryParse(Console.ReadLine(), out numero)){
-        Console.WriteLine("Devi inserire un numero!");
-        
-    }
-    if (numero % 2 != 0)
-        numeri[i] = numero;
-}
+//int[] numeri = new int[6];
+//int numero = 0;
+//for (int i = 0; i <  numeri.Length; i++)
+//{
+//    Console.WriteLine("Inserisci un numero!");
+//    while(!int.TryParse(Console.ReadLine(), out numero)){
+//        Console.WriteLine("Devi inserire un numero!");
 
-Console.WriteLine("I numeri sono: ");
-for (int i = 0; i < numeri.Length; i++)
-{
-    if (numeri[i] > 0)
-        Console.WriteLine(numeri[i]);
+//    }
+//    if (numero % 2 != 0)
+//        numeri[i] = numero;
+//}
 
-}
+//Console.WriteLine("I numeri sono: ");
+//for (int i = 0; i < numeri.Length; i++)
+//{
+//    if (numeri[i] > 0)
+//        Console.WriteLine(numeri[i]);
 
+//}
+
+
+// Snack 8 ----------
+
+//int[] numeri = { 23, 44, 3, 1, 65, 23, 11, 45 };
+//int somma = 0;
+
+//for(int i = 0; i < numeri.Length; i++)
+//{
+//    if(i % 2 != 0)
+//    {
+//        somma += numeri[i];
+//    } 
+//}
+
+//Console.WriteLine(somma);   
+
+
+// Snack 9 ----------
