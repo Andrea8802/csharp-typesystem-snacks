@@ -178,7 +178,7 @@
 
 int[] numbers = new int[0];
 int somma = 0;
-int num = 0;
+int num;
 
 while (somma < 50)
 {
