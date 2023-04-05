@@ -92,21 +92,43 @@
 
 //Console.WriteLine("La media è: " + somma / numeri.Length);
 
+
 // Snack 5 ----------
 
-int numUtente;
+//int numUtente;
 
-Console.WriteLine("Inserisci un numero");
+//Console.WriteLine("Inserisci un numero");
 
-while(!int.TryParse(Console.ReadLine(), out numUtente))
+//while(!int.TryParse(Console.ReadLine(), out numUtente))
+//{
+//    Console.WriteLine("Devi inserire un numero!");
+
+//}
+
+//if(numUtente % 2 == 0) 
+//    Console.WriteLine("Il numero è: " + numUtente);
+//else
+//    Console.WriteLine("Il numero è: " + (numUtente + 1));
+
+
+// Snack 5 ----------
+
+using System;
+
+string[] invitati = { "Hadson", "Davide", "Igor", "Andrea" };
+string nomeUtente;
+
+Console.WriteLine("Inserisci il tuo nome...");
+nomeUtente = Console.ReadLine();
+
+
+while (nomeUtente == "")
 {
-    Console.WriteLine("Devi inserire un numero!");
-    
+    Console.WriteLine("Devi inserire il tuo nome!");
+    nomeUtente = Console.ReadLine();
 }
 
-if(numUtente % 2 == 0) 
-    Console.WriteLine("Il numero è: " + numUtente);
+if (invitati.Contains(nomeUtente))
+    Console.WriteLine("Benvenuto!");
 else
-    Console.WriteLine("Il numero è: " + (numUtente + 1));
-
-
+    Console.WriteLine("Non sei invitato!");
