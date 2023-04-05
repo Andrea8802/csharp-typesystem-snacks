@@ -113,22 +113,47 @@
 
 // Snack 5 ----------
 
-using System;
+//using System;
 
-string[] invitati = { "Hadson", "Davide", "Igor", "Andrea" };
-string nomeUtente;
+//string[] invitati = { "Hadson", "Davide", "Igor", "Andrea" };
+//string nomeUtente;
 
-Console.WriteLine("Inserisci il tuo nome...");
-nomeUtente = Console.ReadLine();
+//Console.WriteLine("Inserisci il tuo nome...");
+//nomeUtente = Console.ReadLine();
 
 
-while (nomeUtente == "")
+//while (nomeUtente == "")
+//{
+//    Console.WriteLine("Devi inserire il tuo nome!");
+//    nomeUtente = Console.ReadLine();
+//}
+
+//if (invitati.Contains(nomeUtente))
+//    Console.WriteLine("Benvenuto!");
+//else
+//    Console.WriteLine("Non sei invitato!");
+
+
+// Snack 6 ----------
+
+int[] numeri = new int[6];
+int numero = 0;
+for (int i = 0; i <  numeri.Length; i++)
 {
-    Console.WriteLine("Devi inserire il tuo nome!");
-    nomeUtente = Console.ReadLine();
+    Console.WriteLine("Inserisci un numero!");
+    while(!int.TryParse(Console.ReadLine(), out numero)){
+        Console.WriteLine("Devi inserire un numero!");
+        
+    }
+    if (numero % 2 != 0)
+        numeri[i] = numero;
 }
 
-if (invitati.Contains(nomeUtente))
-    Console.WriteLine("Benvenuto!");
-else
-    Console.WriteLine("Non sei invitato!");
+Console.WriteLine("I numeri sono: ");
+for (int i = 0; i < numeri.Length; i++)
+{
+    if (numeri[i] > 0)
+        Console.WriteLine(numeri[i]);
+
+}
+
