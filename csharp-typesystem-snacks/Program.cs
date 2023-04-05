@@ -243,17 +243,17 @@ internal class Program
 
 
         // Snack 12 ----------
-        Console.Write("Inserisci un numero intero: ");
-        int numero = Convert.ToInt32(Console.ReadLine());
+        //Console.Write("Inserisci un numero intero: ");
+        //int numero = Convert.ToInt32(Console.ReadLine());
 
-        if (IsPari(numero))
-        {
-            Console.WriteLine(numero + " è un numero pari.");
-        }
-        else
-        {
-            Console.WriteLine(numero + " è un numero dispari.");
-        }
+        //if (IsPari(numero))
+        //{
+        //    Console.WriteLine(numero + " è un numero pari.");
+        //}
+        //else
+        //{
+        //    Console.WriteLine(numero + " è un numero dispari.");
+        //}
 
 
 }
