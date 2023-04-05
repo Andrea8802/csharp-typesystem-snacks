@@ -79,16 +79,34 @@
 
 // Snack 4 ----------
 
-int[] numeri = {2, 3, 4, 5, 6, 7, 8};
-int somma = 0;
+//int[] numeri = {2, 3, 4, 5, 6, 7, 8};
+//int somma = 0;
 
-for (int i = 0; i < numeri.Length; i++)
+//for (int i = 0; i < numeri.Length; i++)
+//{
+//    somma += numeri[i];
+
+//}
+
+//Console.WriteLine("La somma è: " + somma);
+
+//Console.WriteLine("La media è: " + somma / numeri.Length);
+
+// Snack 5 ----------
+
+int numUtente;
+
+Console.WriteLine("Inserisci un numero");
+
+while(!int.TryParse(Console.ReadLine(), out numUtente))
 {
-    somma += numeri[i];
-
+    Console.WriteLine("Devi inserire un numero!");
+    
 }
 
-Console.WriteLine("La somma è: " + somma);
+if(numUtente % 2 == 0) 
+    Console.WriteLine("Il numero è: " + numUtente);
+else
+    Console.WriteLine("Il numero è: " + (numUtente + 1));
 
-Console.WriteLine("La media è: " + somma / numeri.Length);
 
