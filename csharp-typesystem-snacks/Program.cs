@@ -209,7 +209,7 @@ internal class Program
         //}
 
 
-        // Snack 9 ----------
+        // Snack 10 ----------
         //Console.WriteLine("Inserisci il numero di array da generare:");
         //int n = int.Parse(Console.ReadLine());
 
