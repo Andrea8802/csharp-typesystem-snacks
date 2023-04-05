@@ -226,25 +226,45 @@ internal class Program
 
 
         // Snack 11 ----------
-            Console.Write("Inserisci la prima parola: ");
-            string parola1 = Console.ReadLine();
-            Console.Write("Inserisci la seconda parola: ");
-            string parola2 = Console.ReadLine();
+        //Console.Write("Inserisci la prima parola: ");
+        //string parola1 = Console.ReadLine();
+        //Console.Write("Inserisci la seconda parola: ");
+        //string parola2 = Console.ReadLine();
 
-            if (confronta_lunghezza(parola1, parola2))
-            {
-                Console.WriteLine(parola1);
-                Console.WriteLine(parola2);
-            }
-            else
-            {
-                Console.WriteLine(parola1.Length > parola2.Length ? parola1 : parola2);
-            }
+        //if (confronta_lunghezza(parola1, parola2))
+        //{
+        //    Console.WriteLine(parola1);
+        //    Console.WriteLine(parola2);
+        //}
+        //else
+        //{
+        //    Console.WriteLine(parola1.Length > parola2.Length ? parola1 : parola2);
+        //}
 
-    }
+
+        // Snack 12 ----------
+        Console.Write("Inserisci un numero intero: ");
+        int numero = Convert.ToInt32(Console.ReadLine());
+
+        if (IsPari(numero))
+        {
+            Console.WriteLine(numero + " è un numero pari.");
+        }
+        else
+        {
+            Console.WriteLine(numero + " è un numero dispari.");
+        }
+
+
+}
 
     static bool confronta_lunghezza(string parola1, string parola2)
     {
         return parola1.Length == parola2.Length;
+    }
+
+    static bool IsPari(int numero)
+    {
+        return numero % 2 == 0;
     }
 }
